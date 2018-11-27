@@ -10,7 +10,7 @@ namespace ConsoleApplication2
     {
         static void Main(string[] args)
         {
-            HeavyWeightCar car1 = new HeavyWeightCar(model: "ZIL", yearOfManuf:1998,cost:300000, loadCapacity:300, mileAge:1000, color: "Red");
+            HeavyWeightCar car1 = new HeavyWeightCar(model: "ZIL", yearOfManuf: 1998, cost: 300000, loadCapacity: 300, mileAge: 1000, color: "Red");
             HeavyWeightCar car2 = new HeavyWeightCar(2000, "Kamaz", "Yellow", 900000, 500);
             HeavyWeightCar car3 = new HeavyWeightCar(2000, "Kamaz", "Yellow", 900000, 500);
             HeavyWeightCar car4 = new HeavyWeightCar("Kraz", 900000, 500);
@@ -33,6 +33,8 @@ namespace ConsoleApplication2
             Console.WriteLine(Car.CountCars());
             Console.WriteLine(car1.GetMileAge());
             Console.WriteLine(car2.GetMileAge());
+
+            Console.WriteLine(car5.GetCarAge());
         }
     }
 }

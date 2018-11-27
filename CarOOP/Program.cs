@@ -21,6 +21,8 @@ namespace ConsoleApplication2
             Console.WriteLine(car1.GetDiscountPrice());
             Console.WriteLine(car1.GetDiscountPrice("0000"));
             Console.WriteLine(car1.GetDiscountPrice("0001"));
+            Console.WriteLine("Discount");
+            Console.WriteLine(car5.GetDiscountPrice());
 
             Console.WriteLine(car4.GetColor() + " " + car4.GetYear());
 

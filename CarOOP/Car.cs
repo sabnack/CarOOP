@@ -105,5 +105,9 @@ namespace ConsoleApplication2
             return car1.Cost < car2.Cost;
         }
 
+        public int GetCarAge()
+        {
+            return new DateTime(GetYear(), 1, 1).CarAge();
+        }
     }
 }

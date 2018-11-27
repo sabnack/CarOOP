@@ -78,7 +78,7 @@ namespace ConsoleApplication2
             return YearOfManuf.GetHashCode() ^ Model.GetHashCode();
         }
 
-        public double GetDiscountPrice()
+        public virtual double GetDiscountPrice()
         {
             return Cost * 0.9;
         }

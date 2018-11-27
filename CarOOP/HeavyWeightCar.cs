@@ -16,12 +16,13 @@ namespace ConsoleApplication2
             LoadCapacity = loadCapacity;
         }
 
-        public HeavyWeightCar(string model, double cost, double loadCapacity)
+        public HeavyWeightCar(string model, double cost, double loadCapacity, int mileAge = 0)
             : this(1930, model, "Red", cost, loadCapacity)
         {
             Model = model;
             Cost = cost;
             LoadCapacity = loadCapacity;
+            MileAge = mileAge;
         }
 
         public double GetLoadCapacity()

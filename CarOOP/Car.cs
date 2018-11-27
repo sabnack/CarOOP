@@ -77,5 +77,15 @@ namespace ConsoleApplication2
                 return Cost * 0.7;
             return Cost * 0.9;
         }
+
+        public static bool operator >(Car car1, Car car2)
+        {
+            return car1.Cost > car2.Cost;
+        }
+
+        public static bool operator <(Car car1, Car car2)
+        {
+            return car1.Cost < car2.Cost;
+        }
     }
 }

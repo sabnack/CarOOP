@@ -10,8 +10,8 @@ namespace ConsoleApplication2
     {
         int CountSeats;
 
-        public LightWeithCar(int yearOfManuf, string model, string color, double cost, int countSeats)
-            :base( yearOfManuf,  model,  color, cost)
+        public LightWeithCar(int yearOfManuf, string model, string color, double cost, int countSeats, int mileAge = 0)
+            :base( yearOfManuf,  model,  color, cost, mileAge)
         {
             CountSeats = countSeats;
         }

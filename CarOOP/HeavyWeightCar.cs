@@ -32,7 +32,7 @@ namespace ConsoleApplication2
 
         public override void PrintDescription()
         {
-            Console.WriteLine("{0} {1} {2} {3} {4} {5}", Model, YearOfManuf, Color, Cost, LoadCapacity, MileAge);
+            Console.WriteLine("{0} {1} {2} {3} {4} {5}", Model, YearOfManuf, Color, Cost, LoadCapacity, MileAge); 
         }
     }
 }

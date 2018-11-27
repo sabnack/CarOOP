@@ -14,6 +14,7 @@ namespace ConsoleApplication2
             HeavyWeightCar car2 = new HeavyWeightCar(2000, "Kamaz", "Yellow", 900000, 500);
             HeavyWeightCar car3 = new HeavyWeightCar(2000, "Kamaz", "Yellow", 900000, 500);
             HeavyWeightCar car4 = new HeavyWeightCar("Kraz", 900000, 500);
+            LightWeithCar car5 = new LightWeithCar(2006, "Vaz", "Grey", 75000, 5);
             Console.WriteLine(car1.GetYear());
             Console.WriteLine(car1.Equals(car2));
             Console.WriteLine(car2.Equals(car3));
@@ -27,6 +28,7 @@ namespace ConsoleApplication2
 
             Console.WriteLine(car1>car2);
             Console.WriteLine(car1 < car2);
+            Console.WriteLine(Car.CountCars());
 
         }
     }

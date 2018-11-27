@@ -13,6 +13,7 @@ namespace ConsoleApplication2
         protected string Model;
         protected string Color;
         protected double Cost;
+        static protected int CounterCars = 0;
 
         public Car(int yearOfManuf, string model, string color, double cost)
         {
@@ -27,6 +28,12 @@ namespace ConsoleApplication2
             Model = model;
             Color = color;
             Cost = cost;
+            CounterCars++;
+        }
+
+        static public int CountCars()
+        {
+           return CounterCars;
         }
 
         public int GetYear()

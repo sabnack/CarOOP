@@ -77,5 +77,7 @@ namespace ConsoleApplication2
                 return Cost * 0.7;
             return Cost * 0.9;
         }
+
+        public abstract void PrintDescription();
     }
 }

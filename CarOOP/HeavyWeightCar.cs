@@ -17,7 +17,8 @@ namespace ConsoleApplication2
         }
 
         public HeavyWeightCar(string model, double cost, double loadCapacity, int mileAge = 0)
-            : this(1930, model, "Red", cost, loadCapacity)
+
+            : this(1930, model, "Red", cost, loadCapacity, mileAge)
         {
             Model = model;
             Cost = cost;
@@ -32,7 +33,7 @@ namespace ConsoleApplication2
 
         public override void PrintDescription()
         {
-            Console.WriteLine("{0} {1} {2} {3} {4}", Model, YearOfManuf, Color, Cost, LoadCapacity);
+            Console.WriteLine("{0} {1} {2} {3} {4} {5}", Model, YearOfManuf, Color, Cost, LoadCapacity, MileAge);  
         }
     }
 }

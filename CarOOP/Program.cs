@@ -22,6 +22,9 @@ namespace ConsoleApplication2
             Console.WriteLine(car1.GetDiscountPrice("0001"));
 
             Console.WriteLine(car4.GetColor() + " " + car4.GetYear());
+
+            Console.WriteLine(car1>car2);
+            Console.WriteLine(car1 < car2);
         }
     }
 }

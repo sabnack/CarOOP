@@ -13,9 +13,10 @@ namespace ConsoleApplication2
         protected string Model;
         protected string Color;
         protected double Cost;
-        static protected int CounterCars = 0;
+        static private int _counterCars = 0;
+        protected int MileAge;
 
-        public Car(int yearOfManuf, string model, string color, double cost)
+        public Car(int yearOfManuf, string model, string color, double cost, int mileAge=0)
         {
             if (yearOfManuf > 1900 && yearOfManuf < 2020)
             {
@@ -28,12 +29,18 @@ namespace ConsoleApplication2
             Model = model;
             Color = color;
             Cost = cost;
-            CounterCars++;
+            _counterCars++;
+            MileAge = mileAge;
         }
 
         static public int CountCars()
         {
-           return CounterCars;
+           return _counterCars;
+        }
+
+        public int GetMileAge()
+        {
+            return MileAge;
         }
 
         public int GetYear()

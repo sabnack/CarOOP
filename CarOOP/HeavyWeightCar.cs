@@ -10,8 +10,8 @@ namespace ConsoleApplication2
     {
         double LoadCapacity;
 
-        public HeavyWeightCar(int yearOfManuf, string model, string color, double cost, double loadCapacity)
-            : base(yearOfManuf, model, color, cost)
+        public HeavyWeightCar(int yearOfManuf, string model, string color, double cost, double loadCapacity, int mileAge = 0)
+            : base(yearOfManuf, model, color, cost, mileAge)
         {
             LoadCapacity = loadCapacity;
         }

@@ -27,7 +27,7 @@ namespace ConsoleApplication2
         public override void PrintDescription()
         {
 
-            Console.WriteLine("{0} {1} {2} {3} {4}", Model, YearOfManuf, Color, Cost, _countSeats);
+            Console.WriteLine("{0} {1} {2} {3} {4} {5}", Model, YearOfManuf, Color, Cost, _countSeats, MileAge);
         }
 
         public override double GetDiscountPrice()
@@ -42,9 +42,6 @@ namespace ConsoleApplication2
             {
                 return Cost - (Cost * _baseDiscount + 2 * monthNow);
             }
-
-            Console.WriteLine("{0} {1} {2} {3} {4} {5}", Model, YearOfManuf, Color, Cost, CountSeats, MileAge);
-
         }
     }
 }
